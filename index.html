@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Weathered — Real-time insights, safer tomorrow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#182B4A">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Weathered">
+<meta name="description" content="Weathered — real-time weather intelligence and disaster reporting for India.">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<aside id="sidebar">
+  <div class="brand">
+    <svg class="brand-mark" viewBox="0 0 40 40" width="36" height="36" aria-hidden="true">
+      <defs>
+        <linearGradient id="brandBg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#F4A93A"/>
+          <stop offset="55%" stop-color="#E98A15"/>
+          <stop offset="100%" stop-color="#1D7874"/>
+        </linearGradient>
+      </defs>
+      <circle cx="20" cy="20" r="19" fill="url(#brandBg)"/>
+      <circle cx="27.5" cy="12.5" r="3.4" fill="#FFF3DC"/>
+      <path d="M13 25.5c-3.2 0-5.8-2.5-5.8-5.7 0-2.9 2.2-5.4 5-5.7.9-3.2 3.9-5.5 7.4-5.5 4 0 7.4 3 7.9 6.9 2.7.5 4.8 2.8 4.8 5.6 0 3.1-2.6 5.6-5.7 5.6H13z" fill="#fff"/>
+      <path d="M17 27.5l-1.6 3.6M22 27.5l-1.6 3.6M27 27.5l-1.6 3.6" stroke="#FFF3DC" stroke-width="1.6" stroke-linecap="round"/>
+    </svg>
+    <span class="brand-text">Weathered</span>
+  </div>
+  <div class="tag" data-i18n="tagline">Real-time insights, safer tomorrow</div>
+  <nav id="nav"></nav>
+</aside>
+
+<div id="main">
+  <div id="topbar">
+    <input type="search" id="searchBox" placeholder="Search location, event, city, state…">
+    <select id="langSel">
+      <option value="en">English</option>
+      <option value="hi">हिंदी</option>
+    </select>
+    <button id="themeToggleBtn" class="chip" style="cursor:pointer" title="Toggle dark / light">🌓</button>
+  </div>
+  <div id="content"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

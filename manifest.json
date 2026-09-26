@@ -1,0 +1,15 @@
+{
+  "name": "Weathered — Real-time insights, safer tomorrow",
+  "short_name": "Weathered",
+  "description": "Real-time weather intelligence and disaster reporting for India.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#182B4A",
+  "theme_color": "#182B4A",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
